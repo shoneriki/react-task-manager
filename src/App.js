@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+
 
 function App() {
+  const name = 'Sho'
+  // 2/27/2021-4:50..22.58
+  // variable defined above return, and put into h2 dynamically in curly brackets
+  const x = false
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // this is JSX, not html
+    <div className='container'>
+      <h1>Hello From React</h1>
+      {/* can only have one parent element, h2 shouldn't go outside app */}
+      <h2>Hello, {name}</h2>
     </div>
   );
 }
